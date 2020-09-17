@@ -1,4 +1,5 @@
 main section.products-index,
+main section.dashboard-index,
 main section.categories-show {
 
   .products {
@@ -73,6 +74,10 @@ main section.categories-show {
       }
 
     }
+  }
+
+  .statistics {
+    width: 50%;
   }
 }
 

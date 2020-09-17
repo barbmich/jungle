@@ -2,15 +2,10 @@ class OrdersController < ApplicationController
 
   def show
     @order = Order.find(params[:id])
-    # @line_items = @order.line_items
-    # @products = []
-    # @line_items.each do |item|
-    #   @products.push(Product.find(item.product_id))
 
-    puts "this is order: #{@order.inspect}"
-    puts "this is line_items: #{@order.line_items.inspect}"
-    # puts "this is line_item: #{@line_items.inspect}"
-    # puts "this is products: #{@products.inspect}"
+    # puts "this is order: #{@order.inspect}"
+    # puts "this is line_items: #{@order.line_items.inspect}"
+
   end
 
   def create

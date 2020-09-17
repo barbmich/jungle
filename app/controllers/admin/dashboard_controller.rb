@@ -3,6 +3,8 @@ class Admin::DashboardController < ApplicationController
   before_filter :authenticate
 
   def show
+    @categoriesAmount = Category.count
+    @productsAmount = Product.count
   end
 
   protected
