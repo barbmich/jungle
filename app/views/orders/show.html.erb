@@ -20,15 +20,16 @@
         </tbody>
         <tfoot>
           <tr>
-            <th colspan="4">
+            <td colspan="4">
               TOTAL:
-            </th>
-            <th>
+            </td>
+            <td>
               <%= humanized_money_with_symbol @order.total_cents / 100.0 %>
-            </th>
+            </td>
           </tr>
         </tfoot>
     </table>
+    <strong>Customer e-mail:</strong> <%= @order.email %>
   </div>
 
   <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
